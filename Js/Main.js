@@ -36,41 +36,41 @@ var items = [
     },
     {
         id: 3, // first 10 items are skipped
-        title: "iPhone 14",
+        title: "iPad Air",
         price: 900,
-        image: "/images/iphone14.png"
+        image: "/images/12.png"
     
     },{
         id: 4, // first 10 items are skipped
-        title: "iPhone 14",
+        title: "Macbook Air M2",
         price: 900,
-        image: "/images/iphone14.png"
+        image: "/images/mac.jpg"
     
     },{
         id: 5, // first 10 items are skipped
-        title: "iPhone 14",
+        title: "Airpods",
         price: 900,
-        image: "/images/iphone14.png"
+        image: "/images/air.png"
     
     },{
         id: 6, // first 10 items are skipped
-        title: "iPhone 14",
+        title: "Apple watch 6",
         price: 900,
-        image: "/images/iphone14.png"
+        image: "/images/black-apple-watch.webp"
     
     },
     {
         id: 7, // first 10 items are skipped
-        title: "iPhone 14",
+        title: "Apple watch Ultra",
         price: 900,
-        image: "/images/iphone14.png"
+        image: "/images/FG123.jpeg"
     
     },
     {
         id: 8, // first 10 items are skipped
         title: "iPhone 14",
         price: 900,
-        image: "/images/iphone14.png"
+        image: "/images/iphone-13-mini-midnight-select-2021.png"
     
     },]
 var table = document.querySelector(".cart");
@@ -188,3 +188,25 @@ function deleteCartItem(id) {
         document.querySelector('tbody').innerHTML = ""
     }
 }
+var username = document.querySelector("#username")
+var password = document.querySelector("#password")
+var loginBtn = document.querySelector("#loginBtn");
+let loginToggle = document.querySelector("#loginToggle");
+loginToggle.addEventListener('click',function () {
+    if (login.style.display = "none") {
+        login.style.display = "flex"
+    }
+})
+let users = "admin";
+let passwords = "1234";
+loginBtn.addEventListener("click",function (e) {
+    if (username.value !== users) {
+        alert("wrong user")
+    }
+    else {
+        alert("Hello Mohammed");
+        login.style.display = "none";
+        loginToggle.innerHTML = "Hello Mohamed"
+    }
+    e.preventDefault()
+})

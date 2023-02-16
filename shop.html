@@ -52,7 +52,7 @@
                 </ul>
                 <div class="order-lg-last col-lg-5 col-sm-8 col-8">
                     <div class="float-end">
-                        <a href="#" class="btn btn-light">
+                        <a id="loginToggle" class="btn btn-light">
                             <i class="fa fa-user"></i> <span class="ms-1 d-none d-sm-inline-block">Sign in </span>
                         </a>
                         <a href="#" class="btn btn-light">
@@ -61,6 +61,7 @@
                         <a id="cartBtn" class="btn btn-light">
                             <i class="fa fa-shopping-cart"></i> <span class="ms-1">My cart </span>
                         </a>
+                        
                         <button class="btn btn-outline-secondary" id="toggleMod">
                             <i class="fa-solid fa-toggle-on"></i>
                         </button>
@@ -69,6 +70,11 @@
             </div>
         </nav>
     </header>
+    <div class="container z-1 w-100 bg-dark form-control" id="login">
+        <input type="text" placeholder="UserName" id="username">
+        <input type="password" autocomplete="off" id="password" placeholder="Password">
+        <button id="loginBtn" class="btn btn-primary">Login</button>
+    </div>
     <div class=" w-100 hero">
         <div class="container py-5">
             <div class="container d-flex justify-content-center mt-50 mb-50">

@@ -52,7 +52,7 @@
                 </ul>
                 <div class="order-lg-last col-lg-5 col-sm-8 col-8">
                     <div class="float-end">
-                        <a href="#" class="btn btn-light">
+                        <a id="loginToggle" class="btn btn-light">
                             <i class="fa fa-user"></i> <span class="ms-1 d-none d-sm-inline-block">Sign in </span>
                         </a>
                         <a id="cartBtn" class="btn btn-light">
@@ -67,14 +67,12 @@
             </div>
         </nav>
     </header>
-    <div class=" w-100 hero"     data-aos="fade-up"
-    data-aos-offset="200"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center">
+    <div class="container w-100 bg-dark form-control" id="login">
+        <input type="text" placeholder="UserName" id="username">
+        <input type="password" autocomplete="off" id="password" placeholder="Password">
+        <button id="loginBtn" class="btn btn-primary">Login</button>
+    </div>
+    <div class=" w-100 hero" >
             <div class="container py-5">
                 <div class="row p-5 mb-4 mb-lg-5">
                     <div class="col-lg-9 mx-auto text-center">
